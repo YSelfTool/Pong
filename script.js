@@ -155,30 +155,38 @@ function stop() {
 function press(e) {
     if (e.keyCode == 87) { // w
         wdown = true;
+        e.preventDefault();
     }
     if (e.keyCode == 83) { // s
         sdown = true;
+        e.preventDefault();
     }
     if (e.keyCode == 38) { // Up
         udown = true;
+        e.preventDefault();
     }
     if (e.keyCode == 40) { // Down
         ddown = true;
+        e.preventDefault();
     }
 }
 
 function release(e) {
     if (e.keyCode == 87) { // w
         wdown = false;
+        e.preventDefault();
     }
     if (e.keyCode == 83) { // s
         sdown = false;
+        e.preventDefault();
     }
     if (e.keyCode == 38) { // Up
         udown = false;
+        e.preventDefault();
     }
     if (e.keyCode == 40) { // Down
         ddown = false;
+        e.preventDefault();
     }
 }
 
