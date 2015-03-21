@@ -57,6 +57,10 @@ function mesg(text) {
 }
 
 function update() {
+    if (!document.hasFocus()) {
+        mesg("Click to resume game");
+        return;
+    }
     ballx += ballvx;
     bally += ballvy;
     lsticky += lstickv;
